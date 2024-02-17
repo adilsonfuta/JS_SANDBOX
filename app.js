@@ -1,32 +1,34 @@
+// primitive 
 
-/*
-let nome;
-nome = 'Adilson Futa';
-console.log(nome);
-nome = 'Futa';
-console.log(nome);
-*/
+const nome = 'John doe';
+const num = 12;
+const logic = true;
+const car = null;
+let test;
+//const sym = symbol();
 
-const nome = 'Pedro';
-console.log(nome);
- // const nao pode renomeado
- // nome = 'joao'
-// const deve ser sempre inicializado
-// const test; const test =1112313;
+console.log(typeof nome);
+console.log(typeof num);
+console.log(typeof logic);
+console.log(typeof car);
+console.log(typeof test);
+//console.log(typeof sym);
 
-// object usando const 
-const person = {
-  nome: 'pedro',
-  idade : 30
-}
+// REFERNCE TYPE
 
-console.log(person);
-  person.nome = 'Adilson';
-  person.idade = 32;
-console.log(person);
+console.table({a:1});
 
-// usando array com const 
-  const numbers = [1,2,3,4,5,6];
-console.log(numbers);
-  numbers.push(7);
-console.log(numbers);
+const hobbies = ['movies','programmers'];
+const enderec = {
+  cidade: 'Luanda',
+  estado: 'LDA'
+};
+
+const today =new Date();
+console.log(today);
+
+
+console.log(typeof hobbies);
+console.log(typeof enderec);
+console.log(typeof today);
+
