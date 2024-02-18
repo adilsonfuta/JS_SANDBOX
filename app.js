@@ -1,34 +1,35 @@
-// primitive 
+// type converions  parseInto
 
-const nome = 'John doe';
-const num = 12;
-const logic = true;
-const car = null;
-let test;
-//const sym = symbol();
+let val; 
+// num to string = String or toString 
+val = String(5688999);
+val = String(4+4);
+val = String(true);
+val = String(new Date());
+val =String([1,2,3,5]);
 
-console.log(typeof nome);
-console.log(typeof num);
-console.log(typeof logic);
-console.log(typeof car);
-console.log(typeof test);
-//console.log(typeof sym);
+val =(1992).toString();
 
-// REFERNCE TYPE
+console.log(val);
+console.log(typeof val);
+console.log(val.length);
 
-console.table({a:1});
+console.clear();
+// string to num  = Number or parseInt
 
-const hobbies = ['movies','programmers'];
-const enderec = {
-  cidade: 'Luanda',
-  estado: 'LDA'
-};
+val = Number('54');
+val = Number(true);
+val = Number(null);
+val = Number('hellow world')
+val = Number([1,2,3,5]);
 
-const today =new Date();
-console.log(today);
+val = parseInt(100);
+val = parseFloat(2000.31);
 
 
-console.log(typeof hobbies);
-console.log(typeof enderec);
-console.log(typeof today);
+console.log(val);
+console.log(typeof val);
+console.log(val.toFixed(2));
+
+
 
