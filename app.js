@@ -1,35 +1,37 @@
-// type converions  parseInto
 
-let val; 
-// num to string = String or toString 
-val = String(5688999);
-val = String(4+4);
-val = String(true);
-val = String(new Date());
-val =String([1,2,3,5]);
+const num1 = 1000;
+const num2 = 200;
+let val;
 
-val =(1992).toString();
+console.log(num1 + num2);
+console.log(num1 - num2);
+console.log(num1 * num2);
+console.log(num1 / num2);
+console.log(num1 % num2);
 
-console.log(val);
-console.log(typeof val);
-console.log(val.length);
-
+//val = num1 + num2;
 console.clear();
-// string to num  = Number or parseInt
 
-val = Number('54');
-val = Number(true);
-val = Number(null);
-val = Number('hellow world')
-val = Number([1,2,3,5]);
+console.log(Math.PI);
+console.log(Math.E);
+console.log(Math.round(2.4));
+console.log(Math.ceil(2.7));
+console.log(Math.floor(2.8));
+console.log(Math.sqrt(49));
 
-val = parseInt(100);
-val = parseFloat(2000.31);
+console.log(Math.abs(-99));
+console.log(Math.pow(6,3));
+console.log(Math.min(2,3,45,56,7,8,1,-3));
+console.log(Math.max(2,3,45,536,7,8,1));
+/*
+const valores = [2,3,45,56,7,8,1];
+console.log(Number(Math.max(valores)));
+*/
 
+const valor = 20;
+/* 
+let result = Math.random()*valor+1
+console.log(result.toFixed(2));
+*/
 
-console.log(val);
-console.log(typeof val);
-console.log(val.toFixed(2));
-
-
-
+console.log(Math.floor(Math.random()*valor+1));
