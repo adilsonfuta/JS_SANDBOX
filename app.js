@@ -1,37 +1,35 @@
+const firstName = 'Adilson';
+const lastName = 'Futa';
+const age = 36;
 
-const num1 = 1000;
-const num2 = 200;
-let val;
+let valor;
 
-console.log(num1 + num2);
-console.log(num1 - num2);
-console.log(num1 * num2);
-console.log(num1 / num2);
-console.log(num1 % num2);
+valor = firstName + ' '+ lastName;
 
-//val = num1 + num2;
-console.clear();
+console.log(valor);
 
-console.log(Math.PI);
-console.log(Math.E);
-console.log(Math.round(2.4));
-console.log(Math.ceil(2.7));
-console.log(Math.floor(2.8));
-console.log(Math.sqrt(49));
+let appendStr = 'Novo';
+appendStr += ' Teste';
 
-console.log(Math.abs(-99));
-console.log(Math.pow(6,3));
-console.log(Math.min(2,3,45,56,7,8,1,-3));
-console.log(Math.max(2,3,45,536,7,8,1));
-/*
-const valores = [2,3,45,56,7,8,1];
-console.log(Number(Math.max(valores)));
-*/
+appendStr = 'Hello, my name is '+firstName+ ' and am '+age;
+appendStr = " That 's awesome, i can't wait ";
 
-const valor = 20;
-/* 
-let result = Math.random()*valor+1
-console.log(result.toFixed(2));
-*/
+appendStr = firstName.length;
+appendStr = firstName.concat(' ',lastName);
+appendStr = appendStr.toUpperCase(appendStr);
+appendStr = appendStr.toLowerCase(appendStr);
+appendStr = firstName[0];
+appendStr = firstName.indexOf('l');
+appendStr = firstName.lastIndexOf('l');
+appendStr = firstName.charAt('5');
+appendStr = firstName.charAt(firstName.length-1);
+appendStr = firstName.substring(0,3);
+appendStr = firstName.slice(0,5);
+appendStr = firstName.slice(-3);
 
-console.log(Math.floor(Math.random()*valor+1));
+const str = 'Hello my name is Adeler';
+appendStr = str.split(' ');
+appendStr = str.replace('Adeler','Jack');
+appendStr = str.includes('Hello');
+
+console.log(appendStr);
