@@ -1,37 +1,42 @@
-// Learning Template Literal or / Template String  es5
+const num = [43,47,8,9,12,3,4,6,788];
+const vect = new Array(2,3,4,5,88,1);
+const frutas = ['apple','banana','orange','pear'];
+const mixed = [22,'hello',true,undefined,null,num,{a:1,b:2},new Date()];
 
-const nome = 'John';
-const age = 30;
-const job = 'web Developer';
-const city = 'Luanda';
+let val;
 
-let html;
+val = Array.isArray(num);
+num[3]=100;
+val = num[3];
+val = num.indexOf(788);
+num.push(2000);
+num.unshift(100);
 
-html = '<ul><li>Nome: '+ nome +'</li><li>Idade: '+age+'</li><li>Trabalho: '+job+'</li><li>Cidade: '+city+'</li></ul>';
+num.pop();
+num.shift();
+//num.splice(1,4);
+num.reverse();
+val = num.concat(mixed);
+val = frutas.sort();
+val = num.sort();
 
-html = '<h1> Template Literal (ES5)</h1>'+ 
-      '<ul>'+
-      '<li>Nome: '+ nome +'</li>'+
-      '<li>Idade: '+age+'</li>'+
-      '<li>Trabalho: '+job+'</li>'+
-      '<li>Cidade: '+city+'</li>'+
-      '</ul>';
+val = num.sort(function (a,b) {
+  return a-b
+})
 
-      function Hello() {
-          return 'hello word';
-      }
+const arranjo = [43,47,8,9,12,3,4,6,788];
 
-      html += `
-      <h1>Template String / Literal (ES6)</h1> 
-      <ul>
-      <li>Nome: ${nome}</li>
-      <li>Idade: ${age}</li>
-      <li>Trabalho: ${job}</li>
-      <li>Cidade: ${city}</li>
-      <li>${Hello()}</li>
-      <li>${age>20 ? 'kota': ' Puto'}</li>
-      </ul>
-      `;    
+val = arranjo.find(function (n) {
+  return n<50;
+})
 
-document.body.innerHTML=html;
+function under50(params) {
+  return params<3;
+}
+function over50(params) {
+  return params>50;
+}
+val = arranjo.find(over50);
 
+console.log(val);
+//console.log(num);
