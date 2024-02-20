@@ -303,11 +303,11 @@ val = num.sort(function (a,b) {
 })
 
 const arranjo = [43,47,8,9,12,3,4,6,788];
-
+// 1- passar tudo dentro 
 val = arranjo.find(function (n) {
   return n<50;
 })
-
+// 2- passar separado  
 function under50(params) {
   return params<3;
 }
