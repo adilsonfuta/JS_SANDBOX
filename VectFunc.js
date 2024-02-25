@@ -15,11 +15,6 @@ const crudVetor = {
   read: function(vetor){
     if(Array.isArray(vetor))
     console.log(vetor);
-    /*
-    for(let i = 0; i<=vetor.length; i++){
-      console.log(vetor[i]);
-    }
-    */
   },
   update: function(vetor, valor, pos){
     pos = pos - 1;
@@ -93,6 +88,9 @@ function QtdPares(vetor){
       crudVetor.delete(array,3);
       console.log(array);
 
+      crudVetor.read(array);
+
+      crudVetor.create(array,3000);
       crudVetor.read(array);
 })();
 
